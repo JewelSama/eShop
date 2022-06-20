@@ -20,3 +20,18 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// Route::group(['middleware' => ['auth','isAdmin']], function () {
+
+//     Route::get('/dashboard', function () {
+//        return view('admin.dashboard');
+//     });
+ 
+//  });
+
+Route::middleware(['auth', 'isAdmin'])->group(function () {
+    Route::get('/dashboard', function () {
+        return "This is Admin";
+    });
+});
+ 
