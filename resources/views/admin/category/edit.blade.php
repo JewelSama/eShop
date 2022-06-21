@@ -41,8 +41,9 @@
                     <label for="">Meta Description</label>
                     <input type="text"  value="{{$category->description}}" class="form-control" name="meta_description">
                 </div>
+                
                 @if ($category->image)
-                    <img src="{{asset('assets/uploads/category/'.$category->image)}}" alt="Category image">
+                    <img src="{{asset('assets/uploads/category/'.$category->image)}}" style="width: 300px;" alt="Category image">
                 @endif
                 <div class="col-md-12">
                     <input type="file"  value="{{$category->meta_description}}" name="image" class="form-control">
