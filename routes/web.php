@@ -35,5 +35,7 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('categories', 'Admin\CategoryController@index');
     //categories....url sturff
     Route::get('add-category', 'Admin\CategoryController@add');
+
+    Route::post('insert-category', 'Admin\CategoryController@insert');
 });
  
