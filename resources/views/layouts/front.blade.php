@@ -16,7 +16,12 @@
 
     <link href="{{ asset('frontend/css/bootstrap5.css') }}" rel="stylesheet">
     <link href="{{ asset('frontend/css/custom.css') }}" rel="stylesheet">
-</head>
+    
+    <link href="{{ asset('frontend/css/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('frontend/css/owl.theme.default.min.css') }}" rel="stylesheet">
+
+
+  </head>
 <body>
   @include('layouts.inc.frontnavbar')
         <div class="content">
@@ -24,12 +29,13 @@
         </div>
     </div>
  
-
-  <script src="{{ asset('frontend/js/bootstrap.bundle.min.js') }}" defer></script>
+    <script src="{{ asset('frontend/js/jquery-3.6.0.min.js') }}"></script>
+  <script src="{{ asset('frontend/js/bootstrap.bundle.min.js') }}"></script>  
+  <script src="{{ asset('frontend/js/owl.carousel.min.js') }}"></script>
   
   
   
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="{{ asset('admin/js/sweetalert.min.js') }}"></script>
 
   @if (session('status'))
       <script>

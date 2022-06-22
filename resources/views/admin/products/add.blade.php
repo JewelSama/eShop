@@ -5,7 +5,7 @@
             <h4>Add Product</h4>
         </div>
         <div class="card-body">
-        <form action="{{url('insert-product')}}" method="post" enctype="multipart/form-data">
+        <form action="{{route('add-product')}}" method="post" enctype="multipart/form-data">
             @csrf
         <div class="col-md-12 mb-3">
             <select class="form-select" name="cate_id">
