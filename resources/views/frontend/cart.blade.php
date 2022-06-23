@@ -57,7 +57,7 @@
         </div>
         <div class="card-footer">
             <h5>Total Proce: ₦{{$total}}
-            <button class="btn btn-outline-success float-end">Proceed to checkout</button>
+            <a href="{{url('checkout')}}" class="btn btn-outline-success float-end">Proceed to checkout</a>
             </h5>
         </div>
     </div>
