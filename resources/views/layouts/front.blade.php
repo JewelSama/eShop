@@ -27,6 +27,8 @@
     <style>
       a{
         text-decoration: none !important;
+        color: #000;
+        font-weight: bold;
       }
     </style>
 
@@ -38,9 +40,10 @@
         </div>
     </div>
  
-    <script src="{{ asset('frontend/js/jquery-3.6.0.min.js') }}"></script>
+  <script src="{{ asset('frontend/js/jquery-3.6.0.min.js') }}"></script>
   <script src="{{ asset('frontend/js/bootstrap.bundle.min.js') }}"></script>  
   <script src="{{ asset('frontend/js/owl.carousel.min.js') }}"></script>
+  <script src="{{ asset('frontend/js/custom.js') }}"></script>
   
   
   
