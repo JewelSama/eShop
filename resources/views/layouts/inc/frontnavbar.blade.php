@@ -10,14 +10,16 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="{{url('category')}}">Category</a>
+        </li>
+        @guest
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('login')}}">Login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="{{route('register')}}">Register</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
+        @endguest
       </ul>
     </div>
   </div>

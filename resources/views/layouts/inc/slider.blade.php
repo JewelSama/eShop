@@ -4,15 +4,33 @@
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="{{asset('images/jake.jpg')}}" class="d-block w-100" alt="...">
+  <div class="carousel-inner" style=" height: 450px;">
+  <div class="carousel-item active" style="position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 450px;">
+      <img src="{{asset('images/jake.jpg')}}" style="position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 450px;"  class="d-block w-100" alt="...">
+    </div>    
+    <div class="carousel-item" style="position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 450px;">
+      <img src="{{asset('images/jake.jpg')}}" style="position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 450px;"  class="d-block w-100" alt="...">
     </div>
-    <div class="carousel-item">
-      <img src="{{asset('images/jake.jpg')}}" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="{{asset('images/jake.jpg')}}" class="d-block w-100" alt="...">
+    <div class="carousel-item" style="position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 450px;">
+      <img src="{{asset('images/jake.jpg')}}" style="position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 450px;"  class="d-block w-100" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
