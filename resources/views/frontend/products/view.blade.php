@@ -36,8 +36,8 @@
                 </h2>
 
                 <hr>
-                <label for="" class="me-3">Original Proce: <s>Rs {{$products->original_price}}</s></label>
-                <label for="" class="fw-bold">Original Proce: Rs {{$products->selling_price}}</label>
+                <label for="" class="me-3">Original Proce: <s>₦{{$products->original_price}}</s></label>
+                <label for="" class="fw-bold">Original Proce: ₦{{$products->selling_price}}</label>
                 <p class="mt-3">
                     {!! $products->small_description !!}
                 </p>

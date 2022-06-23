@@ -7,6 +7,7 @@ use App\Models\Cart;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Laravel\Ui\Presets\React;
 
 class CartController extends Controller
 {
@@ -58,4 +59,18 @@ public function add(Request $request)
         return response()->json(['status' => "Login to continue"]);
     }
 }
+
+    public function updatecart(Request $request)
+    {
+        $prod_id = $request->input('prod_id');
+        $product_qty = $request->input('prod_qty');
+        if(Cart::where('prod_id', $prod_id)->where('user_id', Auth::id())->exists())
+        {
+            $cart = Cart::where('prod_id', $prod_id)->where('user_id', Auth::id())->first();
+            $cart->prod_qty = $product_qty;
+            $cart->update();
+            return response()->json(['status' => "Quantity updated!"]);
+        }
+        
+    }
 }
