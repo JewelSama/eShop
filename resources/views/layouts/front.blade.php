@@ -51,7 +51,7 @@
 
   @if (session('status'))
       <script>
-        swal("Good job!", "{{session('status')}}", "success", {
+        swal("", "{{session('status')}}", "success", {
   button: "Arigato",
 });
       </script>

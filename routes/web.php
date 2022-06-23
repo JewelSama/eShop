@@ -33,6 +33,10 @@ Route::get('view-category/{cate_slug}/{prod_slug}', [FrontendController::class, 
 Auth::routes();
  
 Route::post('/add-to-cart', [CartController::class, 'add']);
+Route::post('delete-cart-item', [CartController::class, 'deleteproduct']);
+
+
+
 Route::middleware(['auth'])->group(function () {
     
     Route::get('cart', [CartController::class, 'viewcart']);
